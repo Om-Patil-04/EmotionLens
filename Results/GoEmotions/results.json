@@ -1,0 +1,35 @@
+{
+  "test_metrics": {
+    "accuracy": 0.28634604754007736,
+    "hamming_loss": 0.04808628813603938,
+    "jaccard_score": 0.5195503961673116,
+    "precision_macro": 0.4253198578946381,
+    "recall_macro": 0.6526844793218121,
+    "f1_macro": 0.4986150209753247,
+    "precision_micro": 0.45443533358181143,
+    "recall_micro": 0.7705798704376678,
+    "f1_micro": 0.5717132641697439,
+    "loss": 0.004981260449125968
+  },
+  "config": {
+    "base_model": "microsoft/deberta-v3-base",
+    "num_emotions": 28,
+    "max_length": 384,
+    "hidden_dropout": 0.3,
+    "attention_dropout": 0.15,
+    "batch_size": 12,
+    "learning_rate": 8e-06,
+    "num_epochs": 8,
+    "warmup_ratio": 0.15,
+    "weight_decay": 0.02,
+    "gradient_clip": 1.0,
+    "threshold": 0.35,
+    "focal_alpha": 0.3,
+    "focal_gamma": 2.5,
+    "model_save_path": "./models/goemotions",
+    "results_path": "./results/goemotions",
+    "device": "cuda",
+    "num_workers": 2
+  },
+  "training_completed": "2025-09-05T18:45:33.665455"
+}
